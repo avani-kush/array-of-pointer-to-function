@@ -1,0 +1,40 @@
+#include <stdio.h>
+void fun1(){
+    int a,b;
+scanf("%d",&a);
+scanf("%d",&b);
+    printf("sum=%d",(a+b));
+}
+void fun2(){
+    int a,b;
+scanf("%d",&a);
+scanf("%d",&b);
+    
+    
+    printf("sub=%d",(a-b));
+}
+void fun3(){
+    int a,b;
+scanf("%d",&a);
+scanf("%d",&b);
+   
+    printf("div=%d",(a/b));
+    
+}
+void fun4(){
+    int a,b;
+scanf("%d",&a);
+scanf("%d",&b);
+   
+    printf("mul=%d",(a*b));
+    
+}
+
+int main()    
+{ int ch=0;
+void (*fun_ptr[])()={fun1,fun2,fun3,fun4};
+printf("enter ur choice");
+scanf("%d",&ch);
+(fun_ptr[ch])();
+    return 0;    
+}    
